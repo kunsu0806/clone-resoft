@@ -1,0 +1,238 @@
+@charset "utf-8";
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    /* 폰트사이즈를 100로 하고 그걸 자손들에게 전부 적용시킴 */
+    /* font: size 100%;
+    font: inherit; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+
+
+/* *{box-sizing: boder-box;}
+body{font-family:'NanumSquareRound'; position: relative; font-weight: 500;} */
+
+
+
+
+/* 헤더부분 */
+header {
+    display: inline-block;
+
+    width: 100%;
+    height: 830px;
+
+    background-image: url(./img/헤더배경.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 100%;
+
+    color: white;
+}
+
+
+.logo {
+    padding-top: 2%;
+}
+
+.hd-1 {
+    float: left;
+
+    padding-top: 20%;
+}
+
+.hd-1 p {
+    margin-top: 20px;
+}
+
+.hd-2 {
+    /* 가운데 정렬을 시켜주지만 항목들이 가로로 연결됨 */
+    display: flex;
+    align-items: center;
+
+}
+
+.hd-img {
+    padding-top: 7%;
+}
+
+
+
+
+
+.slide {
+    vertical-align: baseline;
+}
+
+.slide button {
+    outline: none;
+}
+
+.slide br {
+    opacity: 0;
+}
+
+.slide .news_wrap {
+    width: 100%;
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.slide .news_wrap .news_content_wrap {
+    max-width: 1500px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slide .tit_center {
+    text-align: center;
+    float: none;
+}
+
+.slide .title .h_tit {
+    font-size: 42px;
+    font-weight: 600;
+    color: navy;
+}
+
+.slide .subTitleEng {
+    text-transform: uppercase;
+    text-align: center;
+    color: #ee72d8;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+
+.slide h2 {
+    font-size: 18px;
+    color: #272626;
+    font-weight: 600;
+    padding: 20px 0px;
+}
+
+.slide .container_slide {
+    max-width: 1400px;
+    margin: 55px auto;
+
+}
+
+.slide p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.slide .wrap {
+    width: 1440px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.slide .cont {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+.slide .logo {
+    margin: 0 auto;
+    width: 80%;
+    height: 40%;
+
+    transition: all 0.2s linear;
+}
+
+.slide .logo:hover {
+    transform: scale(1.2);
+    box-shadow: 0;
+}
+
+.slide .work-title {
+    height: 30%;
+    font-size: 20px;
+    color: #222;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    line-height: 1.5;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.slide .cont p {
+    word-break: keep-all;
+}
+
+
+
+
+
+/* 맵 */
+.container {
+    display: flex;
+}
+
+.map-info {
+    padding: 70px 50px;
+}
+
+/* 푸터 */
+footer {
+    display: inline-block;
+
+    width: 100%;
+    height: 400px;
+
+    background-image: url(./img/footer2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: white;
+}
+
+.footer-logo,
+.footer_content {
+    margin: 0;
+}
+
+footer #wrapper {
+    /* logo와 content를 가로로 정렬 */
+    display: flex;
+    padding: 80px 50px;
+}
+
+.ex {
+    font-size: large;
+}
+
+.footer_content {
+    padding: 0px 50px;
+    font-size: medium;
+}
+
+.footer_content p {
+    padding-bottom: 10px;
+}
+
+.elements {
+    display: flex;
+    /* 부모넓이보다 넓이가 크면 다음줄로 이동(크기를 줄이지 않음) */
+    flex-wrap: wrap;
+}
+
+.elements p {
+    margin: 0;
+    width: 50%;
+}
