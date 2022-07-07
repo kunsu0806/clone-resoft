@@ -2,7 +2,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     /* 폰트사이즈를 100로 하고 그걸 자손들에게 전부 적용시킴 */
     /* font: size 100%;
@@ -67,7 +67,7 @@ header {
 
 
 
-
+/* 슬라이드 */
 .slide {
     vertical-align: baseline;
 }
@@ -178,15 +178,147 @@ header {
 
 
 
+/* 에코 */
+.cus_wrap {
+    max-width: 1400px;
+    height: 1100px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    margin-bottom: 250px;
+    position: relative;
+    background-position: center;
+}
+
+.cus_wrap .ecoce-bot {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    width: 740px;
+}
+
+.cus_wrap .ministry-Environ-img {
+    position: absolute;
+    right: 0;
+    top: 290px;
+    width: 350px;
+}
+
+.cus_wrap .ecoce-img-wrap{
+    position: relative;
+    height: 100%;
+    top: 160px;
+    width: 960px;
+}
+
+.cus_wrap .ecoce-img-wrap .ecoce-img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+.cus_wrap .eco-clean-earth{
+    position: absolute;
+    right: 0;
+    top: 830px;
+    text-align: right;
+    line-height: 45px;
+    margin-top: 50px;
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+.fadeInRight p{
+    font-family: 'Noto Sans KR', sans-serif;
+    text-align: right;
+}
+.fadeInRight p:first-child {
+    font-size: 40px;
+    font-weight: 600;
+}
+.fadeInRight p:last-child { 
+    font-size: 30px;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+@media screen and (max-width: 1500px){
+    .cus_wrap {height: 60vw}
+    .cus_wrap .ecoce-bot{top: 5%; width: 53%; right: 2%;}
+    .cus_wrap .ministry-Environ-img {top: 30%; width: 25%; right: 2%;}
+    .cus_wrap .ecoce-img-wrap{top: 20%; width: 69%; left: 2%;}
+    .cus_wrap .eco-clean-earth {top: 90%; right: 2%;}
+}
+
+@media screen and (max-width: 1217px){
+    .cus_wrap .eco-clean-earth p:first-child {font-size: 30px;}
+    .cus_wrap .eco-clean-earth p:last-child {font-size: 25px;}
+}
+
+@media screen and (max-width: 940px){
+    .cus_wrap {height: auto; margin: 60px 2%;}
+    .cus_wrap .ecoce-bot {width: 75%; position: unset;}
+    .cus_wrap .ministry-Environ-img {display: none;}
+    .cus_wrap .ecoce-img-wrap{
+        width: 85%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 65px;
+        margin-bottom: 30px;
+    }
+    .cus_wrap .ecoce-img-wrap .ecoce-img {position: unset;}
+    .cus_wrap .eco-clean-earth {margin: 0; position: unset;}
+}
+
+@media screen and (max-width: 640px){
+    .cus_wrap .eco-clean-earth {line-height: 35px;}
+    .cus_wrap .eco-clean-earth p:first-child {font-size: 28px;}
+    .cus_wrap .eco-clean-earth p:last-child {font-size: 22px;}
+    .cus_wrap .ecoce-bot {width: 95%;}
+    .cus_wrap .ecoce-img-wrap {margin-top: 40px;}
+}
+
+
+
+
+
 
 /* 맵 */
-.container {
+.container{
+    margin: 200px 200px;
+    margin-left: 200px;
     display: flex;
+    gap: 90px;
 }
 
 .map-info {
-    padding: 70px 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    font-size: 18px;
+    margin-top: 75px;
 }
+
+.columns {
+    margin: 0;
+}
+
+/* .container {
+    display: flex;
+}
+
+ */
 
 /* 푸터 */
 footer {
