@@ -17,24 +17,44 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
     <!-- 에코 -->
-    <link rel="stylesheet" href=".animate.css">
-    <script src="wow.min.js"></script>
+    <link rel="stylesheet" href="./animate.css">
+    <script src="./wow.min.js"></script>
     <script>
         new WOW().init();
+    </script>
+
+    <!-- 아이콘 -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true
+            })
+        wow.init();
     </script>
 </head>
 
 <body>
     <header>
-        <div id="wrapper">
+        <div id="wrapper" class="header">
             <div class="logo-box">
                 <img src="./img/리소프트로고.png" alt="logo" class="logo" />
             </div>
             <div class="text-box">
                 <div class="hd-1">
-                    <h1>Evolution<br />With New Software</h1>
-                    <p>Mobile APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse,<br />Responsive WEBsite,
-                        Brand Design Launch, ICT Consulting</p>
+                    <p>Evolution<br />With New Software</p>
+                    <!-- <p>Mobile APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite,
+                        Brand Design Launch, ICT Consulting</p> -->
+                    <p>
+                        <span>Mobile APP(Android/iOS) Development, </span>
+                        <span>AI Bigdata Analysis, MetaVerse, </span>
+                        <span>Responsive WEBsite, Brand Design Launch, </span>
+                        <span>ICT Consulting</span>
+                    </p>
                 </div>
                 <div class="hd-2">
                     <img src="./img/메인뇌.png" alt="hd-img" class="hd-img" />
@@ -43,7 +63,96 @@
         </div>
     </header>
     <section>
-        <article></article>
+        <article>
+            <div class="b_wrap">
+                <div class="busi_content_wrap">
+                    <ul class="business_list">
+                        <div class="flip">
+                            <li class="front flip-item">
+                                <a href="#">
+                                    <p class="title">앱(APP) 개발</p>
+                                    <p class="subTitleEng">ANDOID/IOS APP</p>
+                                    <div class="img_wrap">
+
+                                        <img src="./img/앱개발아이콘.png" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="back flip-item">
+                                <a href='#' id='test' onclick='preventClick(event)' class="layoutImg"></a>
+                                <img src="./img/앱개발.jpg" style="height: 100%; width: 100%">
+                                <div class="app-text">
+
+                                    Android 앱 개발 <br>
+                                    iOS 앱 개발 <br>
+                                    플랫폼 기획 및 설계
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip">
+                            <li class="front flip-item">
+                                <a href="#">
+                                    <p class="title">웹(WEB) 구축</p>
+                                    <p class="subTitleEng">RESPONSIVE WEB</p>
+                                    <div class="img_wrap">
+                                        <img src="./img/web.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="back flip-item">
+                                <a href='#' id='test' onclick='preventClick(event)' class="layoutImg"></a>
+                                <img src="./img/웹구축.jpg" style="height: 100%; width: 100%">
+
+                                <div class="app-text">
+                                    반응형 홈페이지 구축 <br>데이터베이스 구축 <br>빅데이터 구축
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip">
+                            <li class="front flip-item">
+                                <a href="#">
+                                    <p class="title">AI 기반 기술개발</p>
+                                    <p class="subTitleEng">AI BIGDATA</p>
+                                    <div class="img_wrap">
+                                        <img src="./img/bigdata.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="back flip-item" ;>
+                                <a href='#' id='test' onclick='preventClick(event)' class="layoutImg"></a>
+                                <img src="./img/AI기술개발.jpg" style="height: 100%; width: 100%">
+
+                                <div class="app-text">
+                                    AI 대화형 챗봇 <br>
+                                    자동 객체인식 검출기 <br>
+                                    딥러닝 학습 모델
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip">
+                            <li class="front flip-item">
+                                <a href="#">
+                                    <p class="title">XR 콘텐츠 구현</p>
+                                    <p class="subTitleEng">METAVERSE</p>
+                                    <div class="img_wrap">
+                                        <img src="./img/metaverse.png" alt="" />
+                                    </div>
+                                </a>
+                            </li>
+                            <div class="back flip-item">
+                                <a href='#' id='test' onclick='preventClick(event)' class="layoutImg"></a>
+                                <img src="./img/XR콘텐츠.jpg" style="height: 100%; width: 100%">
+
+                                <div class="app-text">
+                                    실감형 플랫폼 구축<br>
+                                    가상현실 콘텐츠 제작<br>
+                                    게임 콘텐츠 제작
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+        </article>
         <article class="slide">
             <div class="news_wrap">
                 <div class="news_content_wrap">
@@ -95,14 +204,15 @@
         <article>
             <div class="cus_wrap">
                 <img src="./img/에코스봇.png" alt="" class="ecoce-bot wow fadeInDown" data-wow-delay="0.3s">
-        
-                <img src="./img/환경부탄소중립기본법.png" alt="" class="ministry-Environ-img wow fadeInRight" data-wow-delay="0.3s">
-        
+
+                <img src="./img/환경부탄소중립기본법.png" alt="" class="ministry-Environ-img wow fadeInRight"
+                    data-wow-delay="0.3s">
+
                 <div class="ecoce-img-wrap">
                     <img src="./img/에코스모바일원.png" alt="" class="ecoce-img wow fadeInLeft" data-wow-delay="0.3s"
                         style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                 </div>
-        
+
                 <div class="eco-clean-earth wow fadeInRight" data-wow-delay="0.6s">
                     <p>
                         국내 최초<br>
@@ -112,58 +222,229 @@
                 </div>
             </div>
         </article>
-        <article></article>
-        <article class="map">
-            <div id="wrapper">
-                <div  class="container">
-                    <div class="map-wrap">
-                        <div id="map" style="width:635px;height:650px;"></div>
-                        <script type="text/javascript"
-                            src="//dapi.kakao.com/v2/maps/sdk.js?appkey=78f4f36bf8cec7a4fe3231201a6f8b56"></script>
-                        <script>
-                            var mapContainer = document.getElementById('map'), // 지도를 표시할 div
-                                mapOption = {
-                                    center: new kakao.maps.LatLng(35.87172918917555, 128.62486866975289), // 지도의 중심좌표
-                                    level: 3 // 지도의 확대 레벨
-                                };
-                            // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
-                            var map = new kakao.maps.Map(mapContainer, mapOption);
-                            var imageSrc = './img/지도마커.png', // 마커이미지의 주소입니다
-                                imageSize = new kakao.maps.Size(220, 45), // 마커이미지의 크기입니다
-                                imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
-                            // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
-                            var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-                                markerPosition = new kakao.maps.LatLng(35.87172918917555, 128.62486866975289); // 마커가 표시될 위치입니다
-                            // 마커를 생성합니다
-                            var marker = new kakao.maps.Marker({
-                                position: markerPosition,
-                                image: markerImage // 마커이미지 설정
-                            });
-                            // 마커가 지도 위에 표시되도록 설정합니다
-                            marker.setMap(map);
-                        </script>
+        <article>
+            <section>
+                <div class="back-5">
+                    <div class="back-5d">
+                        <img src="./img/리소프트로고_big.png" class="wow fadeInDown sec5-image">
+                    </div>
+                </div>
+                <div class="wraper">
+                    <ul class="wraper-ul">
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.1s">
+                            <div class="icon-image">
+                                <img src="./img/대구광역시 건축사회.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구광역시 건축사회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.2s">
+                            <div class="icon-image">
+                                <img src="./img/대구광역시.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구광역시</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.3s">
+                            <div class="icon-image">
+                                <img src="./img/매일신문.png" class="icon">
+                            </div>
+                            <p class="icon-name">매일신문</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.4s">
+                            <div class="icon-image">
+                                <img src="./img/경북대학교.png" class="icon">
+                            </div>
+                            <p class="icon-name">경북대학교</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.5s">
+                            <div class="icon-image">
+                                <img src="./img/대구MBC문화원.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구MBC문화원</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.6s">
+                            <div class="icon-image">
+                                <img src="./img/대구광역시 체육회.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구광역시 체육회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.7s">
+                            <div class="icon-image">
+                                <img src="./img/대구가톨릭대학교.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구가톨릭대학교</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.8s">
+                            <div class="icon-image">
+                                <img src="./img/송파구청.png" class="icon">
+                            </div>
+                            <p class="icon-name">송파구청</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.9s">
+                            <div class="icon-image">
+                                <img src="./img/국민의힘.png" class="icon">
+                            </div>
+                            <p class="icon-name">국민의힘</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.8s">
+                            <div class="icon-image">
+                                <img src="./img/국제라이온스협회.png" class="icon">
+                            </div>
+                            <p class="icon-name">국제라이온스협회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.7s">
+                            <div class="icon-image">
+                                <img src="./img/한국전기공사협회.png" class="icon">
+                            </div>
+                            <p class="icon-name">한국전기공사협회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.6s">
+                            <div class="icon-image">
+                                <img src="./img/즐거운세상.png" class="icon">
+                            </div>
+                            <p class="icon-name">(주)즐거운 세상</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.5s">
+                            <div class="icon-image">
+                                <img src="./img/해양대학교.png" class="icon">
+                            </div>
+                            <p class="icon-name">한국해양대학교</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.4s">
+                            <div class="icon-image">
+                                <img src="./img/상공회의소.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구상공회의소</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.3s">
+                            <div class="icon-image">
+                                <img src="./img/대한건설협회.png" class="icon">
+                            </div>
+                            <p class="icon-name">대한건설협회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.2s">
+                            <div class="icon-image">
+                                <img src="./img/한국청년회의소.png" class="icon">
+                            </div>
+                            <p class="icon-name">한국청년회의소</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.1s">
+                            <div class="icon-image">
+                                <img src="./img/계명대.png" class="icon">
+                            </div>
+                            <p class="icon-name">계명대학교</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.0s">
+                            <div class="icon-image">
+                                <img src="./img/해양대학교.png" class="icon">
+                            </div>
+                            <p class="icon-name">목포해양대학교</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.9s">
+                            <div class="icon-image">
+                                <img src="./img/대구공고.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구공업고등학교</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.0s">
+                            <div class="icon-image">
+                                <img src="./img/대경산업협회.png" class="icon">
+                            </div>
+                            <p class="icon-name">대경ITC산업협회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.1s">
+                            <div class="icon-image">
+                                <img src="./img/한국조리기능장협회.png" class="icon">
+                            </div>
+                            <p class="icon-name">한국조리기능장협회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.2s">
+                            <div class="icon-image">
+                                <img src="./img/여성기업인협회.png" class="icon">
+                            </div>
+                            <p class="icon-name">IT여성기업인협회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.3s">
+                            <div class="icon-image">
+                                <img src="./img/중소기업융합연합회.png" class="icon">
+                            </div>
+                            <p class="icon-name">중소기업융합연합회</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.4s">
+                            <div class="icon-image">
+                                <img src="./img/대구신용보증재단.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구신용보증재단</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.5s">
+                            <div class="icon-image">
+                                <img src="./img/달서구청.png" class="icon">
+                            </div>
+                            <p class="icon-name">달서구청</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.6s">
+                            <div class="icon-image">
+                                <img src="./img/대구디지털산업진흥회.png" class="icon">
+                            </div>
+                            <p class="icon-name">대구디지털산업진흥원</p>
+                        </li>
+                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.7s">
+                            <div class="icon-image">
+                                <img src="./img/로타리클럽.png" class="icon">
+                            </div>
+                            <p class="icon-name">국제로타리클럽</p>
+                        </li>
+                    </ul>
+                    <button class="button" id="load">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+            </section>
+        </article>
+        <article>
+            <div class="map-wrap">
+                <div id="map" class="kakaomap"></div>
+                <script type="text/javascript"
+                    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=78f4f36bf8cec7a4fe3231201a6f8b56"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div
+                        mapOption = {
+                            center: new kakao.maps.LatLng(35.87172918917555, 128.62486866975289), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+                    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+                    var map = new kakao.maps.Map(mapContainer, mapOption);
+                    var imageSrc = './img/지도마커.png', // 마커이미지의 주소입니다
+                        imageSize = new kakao.maps.Size(220, 45), // 마커이미지의 크기입니다
+                        imageOption = { offset: new kakao.maps.Point(27, 69) }; // 마커이미지의 옵션입니다. 마커의 좌표와 일치시킬 이미지 안에서의 좌표를 설정합니다.
+                    // 마커의 이미지정보를 가지고 있는 마커이미지를 생성합니다
+                    var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+                        markerPosition = new kakao.maps.LatLng(35.87172918917555, 128.62486866975289); // 마커가 표시될 위치입니다
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition,
+                        image: markerImage // 마커이미지 설정
+                    });
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+                </script>
+
+
+                <div class="map-info-wrap">
+                    <div class="map-info">
+                        <p>TEL</p>
+                        <p>(053)475-2110</p>
                     </div>
                     <div class="map-info">
-                        <div id="columns">
-                            <h2>TEL</h2>
-                            <p>(053)475-2110</p>
-                        </div>
-                        <div id="columns">
-                            <h2>FAX</h2>
-                            <p>(0504)257-5966</p>
-                        </div>
-                        <div id="columns">
-                            <h2>E-MAIL</h2>
-                            <p>call@resoft.kr</p>
-                        </div>
-                        <div id="columns">
-                            <h2>ADDRESS</h2>
-                            <p>
-                                (41260)<br>
-                                대구광역시 동구 동대구로 465, 대구스케일업허브<br>(DASH) 713호<br>
-                                (주)리소프트
-                            </p>
-                        </div>
+                        <p>FAX</p>
+                        <p>(0504)257-5966</p>
+                    </div>
+                    <div class="map-info">
+                        <p>E-MAIL</p>
+                        <p>call@resoft.kr</p>
+                    </div>
+                    <div class="map-info">
+                        <p>ADDRESS</p>
+                        <p>(41260)<br>대구광역시 동구 동대구로 465, 대구스케일업허브<br>(DASH) 713호<br>(주)리소프트</p>
                     </div>
                 </div>
             </div>
