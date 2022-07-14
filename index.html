@@ -9,6 +9,9 @@
 
     <link href="./style.css" rel="stylesheet">
 
+        <!-- topBtn -->
+        <script src="./topBtn.js"></script>
+
     <!-- 슬라이드 -->
     <link rel="stylesheet" href="reset.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -19,12 +22,9 @@
     <!-- 에코 -->
     <link rel="stylesheet" href="./animate.css">
     <script src="./wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 
     <!-- 아이콘 -->
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./section5.js"></script>
     <script>
         wow = new WOW(
             {
@@ -39,6 +39,13 @@
 </head>
 
 <body>
+    <!-------------------------------------------------------------- top button ----------------------------------------------------------------->
+    <div class="topBtn">
+        <a href="#" class="topBtn-a"><i class="fa-solid fa-angle-up"></i></a>
+        <p>TOP</p>
+    </div>
+
+    <!--------------------------------------------------------------- header -------------------------------------------------------------------->
     <header>
         <div id="wrapper" class="header">
             <div class="logo-box">
@@ -62,7 +69,10 @@
             </div>
         </div>
     </header>
+
+    
     <section>
+        <!-------------------------------------------------------------- card ----------------------------------------------------------------->
         <article>
             <div class="b_wrap">
                 <div class="busi_content_wrap">
@@ -153,6 +163,8 @@
                     </ul>
                 </div>
         </article>
+
+        <!-------------------------------------------------------------- slider ----------------------------------------------------------------->
         <article class="slide">
             <div class="news_wrap">
                 <div class="news_content_wrap">
@@ -201,6 +213,8 @@
             <script src="index.js"></script>
             <script src="slick.js"></script>
         </article>
+
+        <!-------------------------------------------------------------- ecoce ----------------------------------------------------------------->
         <article>
             <div class="cus_wrap">
                 <img src="./img/에코스봇.png" alt="" class="ecoce-bot wow fadeInDown" data-wow-delay="0.3s">
@@ -222,6 +236,8 @@
                 </div>
             </div>
         </article>
+
+        <!-------------------------------------------------------------- icon ----------------------------------------------------------------->
         <article>
             <section>
                 <div class="back-5">
@@ -229,177 +245,208 @@
                         <img src="./img/리소프트로고_big.png" class="wow fadeInDown sec5-image">
                     </div>
                 </div>
+        
                 <div class="wraper">
                     <ul class="wraper-ul">
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.1s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.1s">
                             <div class="icon-image">
-                                <img src="./img/대구광역시 건축사회.png" class="icon">
+                                <img src="./img/대구광역시 건축사회.png" class="icon">                
                             </div>
                             <p class="icon-name">대구광역시 건축사회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.2s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.2s">
                             <div class="icon-image">
-                                <img src="./img/대구광역시.png" class="icon">
+                                <img src="./img/대구광역시.png" class="icon">                
                             </div>
                             <p class="icon-name">대구광역시</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.3s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.3s">
                             <div class="icon-image">
-                                <img src="./img/매일신문.png" class="icon">
+                                <img src="./img/매일신문.png" class="icon">                
                             </div>
                             <p class="icon-name">매일신문</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.4s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.4s">
                             <div class="icon-image">
-                                <img src="./img/경북대학교.png" class="icon">
+                                <img src="./img/경북대학교.png" class="icon">                
                             </div>
                             <p class="icon-name">경북대학교</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.5s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.5s">
                             <div class="icon-image">
-                                <img src="./img/대구MBC문화원.png" class="icon">
+                                <img src="./img/대구MBC문화원.png" class="icon">                
                             </div>
                             <p class="icon-name">대구MBC문화원</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.6s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.6s">
                             <div class="icon-image">
-                                <img src="./img/대구광역시 체육회.png" class="icon">
+                                <img src="./img/대구광역시 체육회.png" class="icon">                
                             </div>
                             <p class="icon-name">대구광역시 체육회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.7s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.7s">
                             <div class="icon-image">
-                                <img src="./img/대구가톨릭대학교.png" class="icon">
+                                <img src="./img/대구가톨릭대학교.png" class="icon">                
                             </div>
                             <p class="icon-name">대구가톨릭대학교</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.8s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.8s">
                             <div class="icon-image">
-                                <img src="./img/송파구청.png" class="icon">
+                                <img src="./img/송파구청.png" class="icon">                
                             </div>
                             <p class="icon-name">송파구청</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="0.9s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="0.9s">
                             <div class="icon-image">
-                                <img src="./img/국민의힘.png" class="icon">
+                                <img src="./img/국민의힘.png" class="icon">                
                             </div>
                             <p class="icon-name">국민의힘</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.8s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.8s">
                             <div class="icon-image">
-                                <img src="./img/국제라이온스협회.png" class="icon">
+                                <img src="./img/국제라이온스협회.png" class="icon">                
                             </div>
                             <p class="icon-name">국제라이온스협회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.7s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.7s">
                             <div class="icon-image">
-                                <img src="./img/한국전기공사협회.png" class="icon">
+                                <img src="./img/한국전기공사협회.png" class="icon">                
                             </div>
                             <p class="icon-name">한국전기공사협회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.6s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.6s">
                             <div class="icon-image">
-                                <img src="./img/즐거운세상.png" class="icon">
+                                <img src="./img/즐거운세상.png" class="icon">                
                             </div>
                             <p class="icon-name">(주)즐거운 세상</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.5s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.5s">
                             <div class="icon-image">
-                                <img src="./img/해양대학교.png" class="icon">
+                                <img src="./img/해양대학교.png" class="icon">                
                             </div>
                             <p class="icon-name">한국해양대학교</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.4s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.4s">
                             <div class="icon-image">
-                                <img src="./img/상공회의소.png" class="icon">
+                                <img src="./img/상공회의소.png" class="icon">                
                             </div>
                             <p class="icon-name">대구상공회의소</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.3s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.3s">
                             <div class="icon-image">
-                                <img src="./img/대한건설협회.png" class="icon">
+                                <img src="./img/대한건설협회.png" class="icon">                
                             </div>
                             <p class="icon-name">대한건설협회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.2s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.2s">
                             <div class="icon-image">
-                                <img src="./img/한국청년회의소.png" class="icon">
+                                <img src="./img/한국청년회의소.png" class="icon">                
                             </div>
                             <p class="icon-name">한국청년회의소</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.1s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.1s">
                             <div class="icon-image">
-                                <img src="./img/계명대.png" class="icon">
+                                <img src="./img/계명대.png" class="icon">                
                             </div>
                             <p class="icon-name">계명대학교</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.0s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.0s">
                             <div class="icon-image">
-                                <img src="./img/해양대학교.png" class="icon">
+                                <img src="./img/해양대학교.png" class="icon">                
                             </div>
                             <p class="icon-name">목포해양대학교</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="1.9s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="1.9s">
                             <div class="icon-image">
-                                <img src="./img/대구공고.png" class="icon">
+                                <img src="./img/대구공고.png" class="icon">                
                             </div>
                             <p class="icon-name">대구공업고등학교</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.0s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.0s">
                             <div class="icon-image">
-                                <img src="./img/대경산업협회.png" class="icon">
+                                <img src="./img/대경산업협회.png" class="icon">                
                             </div>
                             <p class="icon-name">대경ITC산업협회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.1s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.1s">
                             <div class="icon-image">
-                                <img src="./img/한국조리기능장협회.png" class="icon">
+                                <img src="./img/한국조리기능장협회.png" class="icon">                
                             </div>
                             <p class="icon-name">한국조리기능장협회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.2s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.2s">
                             <div class="icon-image">
-                                <img src="./img/여성기업인협회.png" class="icon">
+                                <img src="./img/여성기업인협회.png" class="icon">                
                             </div>
                             <p class="icon-name">IT여성기업인협회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.3s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.3s">
                             <div class="icon-image">
-                                <img src="./img/중소기업융합연합회.png" class="icon">
+                                <img src="./img/중소기업융합연합회.png" class="icon">                
                             </div>
                             <p class="icon-name">중소기업융합연합회</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.4s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.4s">
                             <div class="icon-image">
-                                <img src="./img/대구신용보증재단.png" class="icon">
+                                <img src="./img/대구신용보증재단.png" class="icon">                
                             </div>
                             <p class="icon-name">대구신용보증재단</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.5s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.5s">
                             <div class="icon-image">
-                                <img src="./img/달서구청.png" class="icon">
+                                <img src="./img/달서구청.png" class="icon">                
                             </div>
                             <p class="icon-name">달서구청</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.6s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.6s">
                             <div class="icon-image">
-                                <img src="./img/대구디지털산업진흥회.png" class="icon">
+                                <img src="./img/대구디지털산업진흥회.png" class="icon">                
                             </div>
                             <p class="icon-name">대구디지털산업진흥원</p>
                         </li>
-                        <li class="wow fadeInUp" id="columns" data-wow-delay="2.7s">
+        
+                        <li class="wow fadeInUp cu-list" data-wow-delay="2.7s">
                             <div class="icon-image">
-                                <img src="./img/로타리클럽.png" class="icon">
+                                <img src="./img/로타리클럽.png" class="icon">                
                             </div>
                             <p class="icon-name">국제로타리클럽</p>
                         </li>
+        
                     </ul>
-                    <button class="button" id="load">
+                    <button class="h-btn">
                         <i class="fa-solid fa-circle-plus"></i>
                     </button>
                 </div>
             </section>
         </article>
+
+        <!-------------------------------------------------------------- map ----------------------------------------------------------------->
         <article>
             <div class="map-wrap">
                 <div id="map" class="kakaomap"></div>
@@ -450,28 +497,32 @@
             </div>
         </article>
     </section>
+
+    <!-------------------------------------------------------------- footer ----------------------------------------------------------------->
     <footer>
-        <div id="wrapper">
+        <div class="footer_wrapper">
             <div class="footer-logo">
                 <img src="./img/푸터로고.png" alt="footer_logo">
             </div>
             <div class="footer_content">
                 <p class="ex">주식회사 리소프트는 새로운 소프트웨어로 진화하여 여러분께 응답드리고자 노력하겠습니다.</p>
-                <div class="elements">
-                    <p>상호. (주)리소프트</p>
-                    <p>대표이사. 오유나</p>
-                    <p>사업자등록번호. 722-81-02219</p>
-                    <p>개인정보책임자. 이현지</p>
+                <div class="elements_wrap">
+                    <div class="elements">
+                        <p>상호. (주)리소프트</p>
+                        <p>대표이사. 오유나</p>
+                        <p>사업자등록번호. 722-81-02219</p>
+                        <p>개인정보책임자. 이현지</p>
+                    </div>
+                    <br>
+                    <div class="elements">
+                        <p>주소. (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>
+                        <p>전화. (053) 475-2110</p>
+                        <p>팩스. (0504) 257-5966</p>
+                        <p>이메일. call@resoft.kr</p>
+                    </div>
+                    <br>
+                    <p class="copyright">Copyright(c) RESOFT CO.LTD. All right reserved.</p>
                 </div>
-                <br />
-                <p>주소. (41260) 대구광역시 동구 동대구로 465, 대구스케일업허브(DASH) 713호 (신천동 106)</p>
-                <div class="elements">
-                    <p>전화. (053) 475-2110</p>
-                    <p>팩스. (0504) 257-5966</p>
-                    <p>이메일. call@resoft.kr</p>
-                </div>
-                <br>
-                <p>Copyright(c) RESOFT CO.LTD. All right reserved.</p>
             </div>
         </div>
     </footer>
