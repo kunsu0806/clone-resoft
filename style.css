@@ -175,7 +175,7 @@ header {
     }
 
     .hd-1 {
-        top: 38%;
+        top: 47%;
         left: calc(50% - 210.5px);
     }
 
@@ -199,6 +199,10 @@ header {
 @media screen and (max-width: 640px) {
     .logo {
         height: 43px;
+    }
+
+    .hd-1 {
+        top: 39%;
     }
 
     .hd-2 {
